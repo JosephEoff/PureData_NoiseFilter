@@ -1,0 +1,16 @@
+#N canvas 0 0 816 420 10;
+#X text 12 231 The NoiseFilter has two inlets.;
+#X text 15 259 The inlets from left to right are:;
+#X text 14 287 1 Audio signal in;
+#X text 15 309 2 Noise suppression level.;
+#X text 12 10 The NoiseFilter determines the current amplitude of the
+audio signal in dB. This volume level is then passed through a high
+pass filter so that only changes in the volume level cause a change
+in the amplification in the final stage before the outlet. The result
+of this is that sounds with a more or less constant volume result in
+an amplification factor close to zero. This removes constant white
+noise as well as continuous sounds (sine wave \, whistle \, hum \,
+etc.) The NoiseFilter is more effective at higher frequencies \, making
+it advisable to use multiple filters with lower supression levels for
+the higher frequencies if you need to filter a large frequency range.
+;

@@ -1,0 +1,12 @@
+#N canvas 42 208 665 497 10;
+#X text 40 163 The MultibandNoiseFilter has two inputs. The left input
+is the audio to be processed. The right input sets the level of noise
+suppression. The higher this value is the more noise will be removed.
+If this number is too high \, then the filter will start removing parts
+of the signal.;
+#X text 40 17 The MultibandNoiseFilter suppresses noise over the entire
+range from 40Hz to 22000 Hz. The MultibandNoiseFilter uses 18 BandlimitedNoiseFilters
+to remove noise from the audio signal. The use of multiple bands allow
+one area to be filtered out completely while still allowing audio in
+other areas. Multiplebands also make it possible to tailor the filtering
+action across the entire bandwidth.;

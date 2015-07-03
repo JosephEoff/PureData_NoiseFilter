@@ -1,0 +1,18 @@
+#N canvas 281 155 330 338 10;
+#X obj 12 12 inlet~;
+#X obj 100 12 inlet;
+#X obj 169 14 inlet;
+#X obj 224 13 inlet;
+#X obj 13 306 outlet~;
+#X obj 13 109 hp10_butt~ \$1;
+#X obj 224 63 * \$3;
+#X obj 13 191 lp10_butt~ \$2;
+#X obj 13 257 NoiseFilter;
+#X connect 0 0 5 0;
+#X connect 1 0 5 1;
+#X connect 2 0 7 1;
+#X connect 3 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 8 1;
+#X connect 7 0 8 0;
+#X connect 8 0 4 0;

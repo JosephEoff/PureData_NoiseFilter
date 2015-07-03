@@ -1,0 +1,20 @@
+#N canvas 205 321 837 509 10;
+#X text -102 4 The BandlimitedNoisefilter uses two 10th order Butterworth
+filters as a band pass to select the range of frequencies to be sent
+through a NoiseFilter.;
+#X text -98 115 The inlets from left to right are:;
+#X text -98 135 1 Audio signal;
+#X text -98 155 2 Lower cutoff frequency;
+#X text -98 175 3 Upper cutoff frequency;
+#X text -98 195 4 Noise supression level - higher values mean less
+noise. Too high will destroy your audio signal.;
+#X text -100 68 The BandlimitedNoiseFilter has four inlets and three
+parameters.;
+#X text -98 246 The parameters from left to right are:;
+#X text -98 266 1 Lower cutoff frequency;
+#X text -98 286 2 Upper cutoff frequency;
+#X text -98 306 3 Noise suppression level compensation. This value
+is needed when using multiple bands. The simple NoiseFilter is more
+effective at higher frequencies \, which results in the low frequencies
+being over emphasized. Use lower values for the higher frequencies.
+See the MultibandNoiseFilter for an example.;
